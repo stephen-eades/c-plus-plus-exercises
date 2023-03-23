@@ -1,7 +1,6 @@
 // operating with loops
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
 int main ()
