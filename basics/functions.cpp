@@ -1,4 +1,4 @@
-// operating with loops
+// operating with functions
 
 #include <iostream>
 using namespace std;
@@ -23,6 +23,11 @@ void ageFunction(string fname, int age) {
     cout << fname << " is " << age << " years old. \n";
 }
 
+// Create a function that returns an integer
+int intFunction(int x) {
+    return 5 + x;
+}
+
 int main ()
 {
     // Call the first function we declared
@@ -31,10 +36,14 @@ int main ()
     // Call the second function we declared, passing in a string
     nameFunction("Stephen");
 
-    // Call the third function we declared, passing in a country
+    // Call the third function we declared, passing in a string
     countryFunction("Sweden");
 
-    ageFunction("Stephen", 29)
+    // Call the fourth function we declared, passing in a string and number
+    ageFunction("Stephen", 29);
+
+    // Call the fifth function we declared, padding in a number and recieving a number back
+    int myInt = intFunction(1);
 
     return 0;
 }
